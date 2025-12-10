@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --background: 40 33% 98%;
+    --foreground: 25 30% 15%;
+
+    --card: 40 40% 97%;
+    --card-foreground: 25 30% 15%;
+
+    --popover: 40 40% 97%;
+    --popover-foreground: 25 30% 15%;
+
+    --primary: 32 95% 50%;
+    --primary-foreground: 40 33% 98%;
+
+    --secondary: 25 60% 35%;
+    --secondary-foreground: 40 33% 98%;
+
+    --muted: 35 30% 90%;
+    --muted-foreground: 25 20% 40%;
+
+    --accent: 45 100% 60%;
+    --accent-foreground: 25 30% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 35 25% 85%;
+    --input: 35 25% 85%;
+    --ring: 32 95% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom design tokens */
+    --saffron: 32 95% 50%;
+    --terracotta: 15 70% 45%;
+    --cream: 40 33% 98%;
+    --masala: 25 60% 25%;
+    --gold: 45 100% 50%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(32 95% 50% / 0.1) 0%, hsl(45 100% 60% / 0.15) 50%, hsl(15 70% 45% / 0.1) 100%);
+    --gradient-warm: linear-gradient(180deg, hsl(40 33% 98%) 0%, hsl(35 30% 95%) 100%);
+    
+    /* Shadows */
+    --shadow-warm: 0 4px 20px -4px hsl(32 95% 50% / 0.2);
+    --shadow-card: 0 2px 12px -2px hsl(25 30% 15% / 0.08);
+    --shadow-card-hover: 0 8px 30px -8px hsl(32 95% 50% / 0.25);
+  }
+
+  .dark {
+    --background: 25 30% 10%;
+    --foreground: 40 33% 95%;
+
+    --card: 25 25% 15%;
+    --card-foreground: 40 33% 95%;
+
+    --popover: 25 25% 15%;
+    --popover-foreground: 40 33% 95%;
+
+    --primary: 32 95% 55%;
+    --primary-foreground: 25 30% 10%;
+
+    --secondary: 25 50% 45%;
+    --secondary-foreground: 40 33% 95%;
+
+    --muted: 25 20% 20%;
+    --muted-foreground: 35 20% 60%;
+
+    --accent: 45 90% 55%;
+    --accent-foreground: 25 30% 10%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 25 20% 25%;
+    --input: 25 20% 25%;
+    --ring: 32 95% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply relative text-foreground/80 hover:text-primary transition-colors duration-200;
+  }
+  
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300;
+  }
+  
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  .menu-card {
+    @apply bg-card rounded-xl p-5 transition-all duration-300 border border-border/50;
+    box-shadow: var(--shadow-card);
+  }
+  
+  .menu-card:hover {
+    box-shadow: var(--shadow-card-hover);
+    @apply -translate-y-1 border-primary/30;
+  }
+
+  .section-title {
+    @apply font-display text-3xl md:text-4xl font-bold text-foreground;
+  }
+
+  .badge-open {
+    @apply bg-emerald-500/15 text-emerald-700 border border-emerald-500/30;
+  }
+
+  .badge-closed {
+    @apply bg-red-500/10 text-red-600 border border-red-500/20;
+  }
+}
