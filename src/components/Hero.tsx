@@ -69,7 +69,7 @@ const Hero = () => {
               asChild
               className="border-2 border-primary/30 text-foreground hover:bg-primary/10 hover:border-primary/50 font-semibold px-8 py-6 text-base rounded-xl transition-all duration-300"
             >
-              <a href="tel:+91-97393-26943" className="flex items-center gap-2">
+              <a href="tel:+919739326943" className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />
                 Call Now
               </a>
@@ -81,7 +81,7 @@ const Hero = () => {
             className="mt-12 text-sm text-muted-foreground animate-fade-in-up opacity-0"
             style={{ animationDelay: "0.4s" }}
           >
-            Morning Tiffin: 7 AM – 10 AM &nbsp;•&nbsp; Evening Chats: 6 PM – 10
+            Morning Tiffin: 7:30 AM – 11 AM &nbsp;•&nbsp; Evening Chats: 5 PM – 8:30
             PM
           </p>
         </div>

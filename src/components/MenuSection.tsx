@@ -8,16 +8,10 @@ interface MenuItem {
 
 const morningItems: MenuItem[] = [
   {
-    name: "Lemon Rice",
-    description:
-      "Tangy and aromatic rice tempered with mustard seeds, curry leaves, and fresh lemon.",
-    price: 50,
-  },
-  {
     name: "Palav",
     description:
       "Fragrant vegetable pulao cooked with aromatic spices and fresh seasonal vegetables.",
-    price: 60,
+    price: 40,
   },
   {
     name: "Idli",
@@ -29,19 +23,19 @@ const morningItems: MenuItem[] = [
     name: "Dosa",
     description:
       "Crispy golden crepe made from fermented rice batter, served with chutneys.",
-    price: 50,
+    price: 40,
+  },
+  {
+    name: "Lemon Rice",
+    description:
+      "Tangy and aromatic rice tempered with mustard seeds, curry leaves, and fresh lemon.",
+    price: 40,
   },
   {
     name: "Poori",
     description:
       "Deep-fried fluffy bread served with spiced potato curry and pickle.",
-    price: 55,
-  },
-  {
-    name: "Rice Bath",
-    description:
-      "Traditional Karnataka-style spiced rice with vegetables and aromatic seasonings.",
-    price: 45,
+    price: 40,
   },
 ];
 
@@ -50,31 +44,31 @@ const eveningItems: MenuItem[] = [
     name: "Bonda",
     description:
       "Crispy deep-fried potato dumplings coated in spiced gram flour batter.",
-    price: 35,
+    price: 20,
   },
   {
-    name: "Bajjis",
+    name: "Bajji",
     description:
       "Assorted vegetable fritters - onion, chilli, and potato dipped in chickpea batter.",
-    price: 40,
+    price: 20,
   },
   {
     name: "Pani Puri",
     description:
       "Crispy hollow puris filled with spiced water, tamarind chutney, and chickpeas.",
-    price: 45,
+    price: 30,
   },
   {
     name: "Masala Puri",
     description:
       "Crushed puris topped with spiced peas curry, onions, and tangy chutneys.",
-    price: 50,
+    price: 30,
   },
   {
     name: "Aloo Bonda",
     description:
       "Spiced mashed potato balls, deep-fried to golden perfection, served with green chutney.",
-    price: 35,
+    price: 20,
   },
 ];
 
@@ -118,7 +112,7 @@ const MenuSection = () => {
                 Morning Tiffin
               </h3>
               <p className="text-sm text-muted-foreground">
-                7:00 AM – 10:00 AM
+                7:30 AM – 11:00 AM
               </p>
             </div>
           </div>
@@ -140,7 +134,7 @@ const MenuSection = () => {
                 Evening Chats
               </h3>
               <p className="text-sm text-muted-foreground">
-                6:00 PM – 10:00 PM
+                5:00 PM – 8:30 PM
               </p>
             </div>
           </div>

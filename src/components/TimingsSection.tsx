@@ -12,10 +12,10 @@ const TimingsSection = () => {
       const minutes = now.getMinutes();
       const currentMinutes = hours * 60 + minutes;
 
-      // Morning: 7:00 AM (420 mins) - 10:00 AM (600 mins)
-      // Evening: 6:00 PM (1080 mins) - 10:00 PM (1320 mins)
-      const isMorningOpen = currentMinutes >= 420 && currentMinutes < 600;
-      const isEveningOpen = currentMinutes >= 1080 && currentMinutes < 1320;
+      // Morning: 7:30 AM (450 mins) - 11:00 AM (660 mins)
+      // Evening: 5:00 PM (1020 mins) - 8:30 PM (1230 mins)
+      const isMorningOpen = currentMinutes >= 450 && currentMinutes < 660;
+      const isEveningOpen = currentMinutes >= 1020 && currentMinutes < 1230;
 
       setIsOpen(isMorningOpen || isEveningOpen);
       setCurrentTime(now);
@@ -66,7 +66,7 @@ const TimingsSection = () => {
                 Morning Tiffin
               </h3>
               <p className="text-3xl font-bold text-primary mb-3">
-                7:00 AM – 10:00 AM
+                7:30 AM – 11:00 AM
               </p>
               <p className="text-muted-foreground">
                 Start your day with our authentic South Indian breakfast
@@ -82,7 +82,7 @@ const TimingsSection = () => {
                 Evening Chats
               </h3>
               <p className="text-3xl font-bold text-secondary mb-3">
-                6:00 PM – 10:00 PM
+                5:00 PM – 8:30 PM
               </p>
               <p className="text-muted-foreground">
                 Enjoy crispy, flavorful evening snacks

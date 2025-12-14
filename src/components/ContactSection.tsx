@@ -46,16 +46,16 @@ const ContactSection = () => {
                       Call Us
                     </h4>
                     <a
-                      href="tel:+91-97393-26943"
+                      href="tel:+919739326943"
                       className="text-primary hover:text-primary/80 transition-colors font-medium text-lg"
                     >
-                      97393 26943
+                      +91 97393 26943
                     </a>
                     <a
-                      href="tel:+91-99800-81237"
+                      href="tel:+919980081237"
                       className="text-primary hover:text-primary/80 transition-colors font-medium text-lg block"
                     >
-                      99800 81237
+                      +91 99800 81237
                     </a>
                     <p className="text-sm text-muted-foreground mt-1">
                       For reservations & bulk orders
@@ -75,8 +75,8 @@ const ContactSection = () => {
                       Opening Hours
                     </h4>
                     <div className="space-y-1 text-muted-foreground">
-                      <p>Morning: 7:00 AM – 10:00 AM</p>
-                      <p>Evening: 6:00 PM – 10:00 PM</p>
+                      <p>Morning: 7:30 AM – 11:00 AM</p>
+                      <p>Evening: 5:00 PM – 8:30 PM</p>
                     </div>
                   </div>
                 </div>
@@ -116,7 +116,7 @@ const ContactSection = () => {
               {/* Direction Buttons */}
               <div className="flex flex-col gap-3 w-full max-w-xs">
                 <a
-                  href="https://www.google.com/maps/search/?api=1&query=Bannikuppe+Harohalli+Karnataka+562112"
+                  href="https://www.google.com/maps/search/?api=1&query=12.673444,77.429889"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors"
@@ -126,7 +126,7 @@ const ContactSection = () => {
                 </a>
                 
                 <a
-                  href="https://www.google.com/maps/dir/?api=1&destination=Bannikuppe+Harohalli+Karnataka+562112"
+                  href="https://www.google.com/maps/dir/?api=1&destination=12.673444,77.429889"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg border-2 border-primary text-primary hover:bg-primary/10 transition-colors font-medium"
