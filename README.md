@@ -1,4 +1,4 @@
-# Aharya - South Indian Hotel Website
+# AAHARYA - South Indian Hotel Website
 
 A beautiful, responsive single-page website for **Aharya**, a small South Indian hotel serving morning tiffins and evening chats.
 
