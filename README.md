@@ -4,8 +4,8 @@ A beautiful, responsive single-page website for **Aharya**, a small South Indian
 
 ## Features
 
-- 🌅 **Morning Tiffin Menu** - Authentic breakfast items (7 AM - 10 AM)
-- 🌙 **Evening Chats Menu** - Crispy snacks (6 PM - 10 PM)
+- 🌅 **Morning Tiffin Menu** - Authentic breakfast items (7 30 AM - 11 AM)
+- 🌙 **Evening Chats Menu** - Crispy snacks (5 PM - 8 30 PM)
 - ⏰ **Live Open/Closed Status** - Real-time indicator based on browser time
 - 📱 **Mobile-First Design** - Fully responsive on all devices
 - 🎨 **Warm, Welcoming Design** - Saffron and cream color palette
